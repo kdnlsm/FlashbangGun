@@ -22,11 +22,11 @@ namespace FlashbangGun
                 ev.IsAllowed = false;
 
                 // you can change to frag grenade if you want
-                ev.Player.ThrowGrenade(ProjectileType.Flashbang);
+                ev.Player.ThrowGrenade(ProjectileType.GrenadeHE);
 
                 if (_plugin.Config.Debug)
                 {
-                    Log.Info($"{ev.Player.Nickname} this guy fired the flashbang gun.");
+                    Log.Info($"{ev.Player.Nickname} this guy fired the grenade gun.");
                 }
             }
         }
